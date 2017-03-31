@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.baronzhang.android.router.app.MainActivity">
+
+    <Button
+        android:id="@+id/btn_start_second_activity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/open_second_activity" />
+
+    <Button
+        android:id="@+id/btn_start_third_activity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/open_third_activity" />
+
+    <Button
+        android:id="@+id/btn_start_fourth_activity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/open_fourth_activity" />
+
+
+    <Button
+        android:id="@+id/btn_start_fifth_activity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/open_fifth_activity" />
+
+</LinearLayout>

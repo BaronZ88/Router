@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Router</string>
+    <string name="open_second_activity">打开 SecondActivity</string>
+    <string name="open_third_activity">打开 ThirdActivity</string>
+    <string name="open_fourth_activity">打开 FourthActivity</string>
+    <string name="open_fifth_activity">打开 FifthActivity</string>
+</resources>

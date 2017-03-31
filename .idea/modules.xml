@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Router.iml" filepath="$PROJECT_DIR$/Router.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/router-annotations/router-annotations.iml" filepath="$PROJECT_DIR$/router-annotations/router-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/router-api/router-api.iml" filepath="$PROJECT_DIR$/router-api/router-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/router-compiler/router-compiler.iml" filepath="$PROJECT_DIR$/router-compiler/router-compiler.iml" />
+    </modules>
+  </component>
+</project>
