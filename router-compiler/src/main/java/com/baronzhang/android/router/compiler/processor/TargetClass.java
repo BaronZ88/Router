@@ -158,9 +158,76 @@ final class TargetClass {
             case Constants.TYPE_KIND.TYPE_STRING:
                 statement += (isActivity ? ("getStringExtra($S)") : ("getString($S)"));
                 break;
+            case Constants.TYPE_KIND.TYPE_CHAR_SEQUENCE:
+                statement += (isActivity ? ("getCharSequenceExtra($S)") : ("getCharSequence($S)"));
+                break;
             case Constants.TYPE_KIND.TYPE_PARCELABLE:
                 statement += (isActivity ? ("getParcelableExtra($S)") : ("getParcelable($S)"));
                 break;
+
+            case Constants.TYPE_KIND.TYPE_ARRAY_INT:
+                statement += (isActivity ? ("getIntArrayExtra($S)") : ("getIntArray($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_LONG:
+                statement += (isActivity ? ("getLongArrayExtra($S)") : ("getLongArray($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_FLOAT:
+                statement += (isActivity ? ("getFloatArrayExtra($S)") : ("getFloatArray($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_DOUBLE:
+                statement += (isActivity ? ("getDoubleArrayExtra($S)") : ("getDoubleArray($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_SHORT:
+                statement += (isActivity ? ("getShortArrayExtra($S)") : ("getShortArray($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_BYTE:
+                statement += (isActivity ? ("getByteArrayExtra($S)") : ("getByteArray($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_BOOLEAN:
+                statement += (isActivity ? ("getBooleanArrayExtra($S)") : ("getBooleanArray($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_STRING:
+                statement += (isActivity ? ("getStringArrayExtra($S)") : ("getStringArray($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_CHAR_SEQUENCE:
+                statement += (isActivity ? ("getCharSequenceArrayExtra($S)") : ("getCharSequenceArray($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_PARCELABLE:
+                statement += (isActivity ? ("getParcelableArrayExtra($S)") : ("getParcelableArray($S)"));
+                break;
+
+            case Constants.TYPE_KIND.TYPE_ARRAY_LIST_INTEGER:
+                statement += (isActivity ? ("getIntegerArrayListExtra($S)") : ("getIntArrayList($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_LIST_LONG:
+                statement += (isActivity ? ("getLongArrayListExtra($S)") : ("getLongArrayList($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_LIST_FLOAT:
+                statement += (isActivity ? ("getFloatArrayListExtra($S)") : ("getFloatArrayList($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_LIST_DOUBLE:
+                statement += (isActivity ? ("getDoubleArrayListExtra($S)") : ("getDoubleArrayList($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_LIST_SHORT:
+                statement += (isActivity ? ("getShortArrayListExtra($S)") : ("getShortArrayList($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_LIST_BYTE:
+                statement += (isActivity ? ("getByteArrayListExtra($S)") : ("getByteArrayList($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_LIST_BOOLEAN:
+                statement += (isActivity ? ("getBooleanArrayListExtra($S)") : ("getBooleanArrayList($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_LIST_STRING:
+                statement += (isActivity ? ("getStringArrayListExtra($S)") : ("getStringArrayList($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_LIST_CHAR_SEQUENCE:
+                statement += (isActivity ? ("getCharSequenceArrayListExtra($S)") : ("getCharSequenceArrayList($S)"));
+                break;
+            case Constants.TYPE_KIND.TYPE_ARRAY_LIST_PARCELABLE:
+                statement += (isActivity ? ("getParcelableArrayListExtra($S)") : ("getParcelableArrayList($S)"));
+                break;
+
+
             case Constants.TYPE_KIND.TYPE_SERIALIZABLE:
                 statement += (isActivity ? ("getSerializableExtra($S)") : ("getSerializable($S)"));
                 break;

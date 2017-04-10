@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity">
+        <activity
+            android:name=".SecondActivity"
+            android:label="SecondActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
@@ -28,7 +30,9 @@
                     android:scheme="router" />
             </intent-filter>
         </activity>
-        <activity android:name=".ThirdActivity">
+        <activity
+            android:name=".ThirdActivity"
+            android:label="ThirdActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
@@ -42,7 +46,9 @@
                     android:scheme="router" />
             </intent-filter>
         </activity>
-        <activity android:name=".FourthActivity">
+        <activity
+            android:name=".FourthActivity"
+            android:label="FourthActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
@@ -55,7 +61,9 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".FifthActivity" />
+        <activity
+            android:name=".FifthActivity"
+            android:label="FifthActivity" />
 
     </application>
 

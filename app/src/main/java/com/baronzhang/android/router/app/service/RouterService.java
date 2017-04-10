@@ -18,8 +18,11 @@ public interface RouterService {
     void startSecondActivity(@UriParam("preActivity") String preActivity, @IntentExtrasParam("stringParam") String stringParam, @IntentExtrasParam("intParam") int intParam);
 
     @CombinationUri(scheme = "router", host = "com.baronzhang.android.router", port = "6666", path = "/activity/third")
-    void startThirdActivity(@UriParam("cityId") String cityId, @IntentExtrasParam("array") ArrayList<Integer> array);
+    void startThirdActivity(@UriParam("preActivity") String preActivity, @IntentExtrasParam("array") ArrayList<Integer> array);
 
     @FullUri("router://com.baronzhang.android.router.FourthActivity")
-    void startFourthActivity(@UriParam("cityId") String cityId, @IntentExtrasParam("User") User user);
+    void startFourthActivity(@UriParam("preActivity") String preActivity, @IntentExtrasParam("user") User user);
+
+    @FullUri("router://com.baronzhang.android.router.FourthActivity")
+    void startFifthActivity(@UriParam("preActivity") String preActivity, @IntentExtrasParam("users") ArrayList<User> users);
 }

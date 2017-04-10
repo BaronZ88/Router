@@ -7,20 +7,6 @@
     tools:context="com.baronzhang.android.router.app.SecondActivity">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="29dp"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="@+id/textView1"
-        app:layout_constraintRight_toRightOf="@+id/textView1"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
         android:id="@+id/textView1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -47,6 +33,20 @@
         app:layout_constraintLeft_toLeftOf="@+id/textView1"
         app:layout_constraintRight_toRightOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="29dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/textView1"
+        app:layout_constraintRight_toRightOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/register_btn"

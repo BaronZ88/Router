@@ -14,6 +14,23 @@ public class User implements Parcelable {
     private double height; //身高
     private double weight; //体重
 
+    public User(String name, int age, double height, double weight) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", height=" + height +
+                ", weight=" + weight +
+                '}';
+    }
+
     public String getName() {
         return name;
     }

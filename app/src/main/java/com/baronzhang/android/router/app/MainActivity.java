@@ -5,21 +5,21 @@ import android.view.View;
 import android.widget.Button;
 
 import com.baronzhang.android.router.RouterInjector;
+import com.baronzhang.android.router.app.model.User;
 
 import java.util.ArrayList;
 
 public class MainActivity extends BaseActivity {
 
-//    @Inject
-//    String cityId;
-//
-//    @InjectUriParam("name")
-//    String cityName;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+            getSupportActionBar().setDisplayShowHomeEnabled(false);
+        }
         RouterInjector.inject(this);
 
 
@@ -48,11 +48,8 @@ public class MainActivity extends BaseActivity {
         startFourthActivityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                ArrayList<Integer> array = new ArrayList<>();
-                array.add(123);
-                array.add(123234);
-                routerService.startThirdActivity("MainActivity", array);
+                User user = new User("小叶子", 17, 165, 80);
+                routerService.startFourthActivity("MainActivity", user);
             }
         });
 
@@ -60,11 +57,10 @@ public class MainActivity extends BaseActivity {
         startFifthActivityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                ArrayList<Integer> array = new ArrayList<>();
-                array.add(123);
-                array.add(123234);
-                routerService.startThirdActivity("MainActivity", array);
+                ArrayList<User> users = new ArrayList<>();
+                users.add(new User("小叶子", 17, 165, 80));
+                users.add(new User("小叶子", 17, 165, 80));
+                routerService.startFifthActivity("MainActivity", users);
             }
         });
     }

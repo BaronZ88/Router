@@ -16,8 +16,8 @@ public class SecondActivity extends BaseActivity {
     @Inject("stringParam")
     String stringParam;
 
-//    @Inject("intParam")
-//    Integer intParam;
+    @Inject("intParam")
+    int intParam;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -33,6 +33,7 @@ public class SecondActivity extends BaseActivity {
 
         textView1.setText("preActivityName: " + preActivity);
         textView2.setText("stringParam: " + stringParam);
-//        textView3.setText("intParam: " + intParam);
+        textView3.setText("intParam: " + intParam);
     }
+
 }
