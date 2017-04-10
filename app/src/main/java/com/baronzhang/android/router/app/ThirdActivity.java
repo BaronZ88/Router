@@ -5,7 +5,10 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.baronzhang.android.router.RouterInjector;
+import com.baronzhang.android.router.annotations.inject.Inject;
 import com.baronzhang.android.router.annotations.inject.InjectUriParam;
+
+import java.util.ArrayList;
 
 public class ThirdActivity extends BaseActivity {
 
@@ -13,8 +16,8 @@ public class ThirdActivity extends BaseActivity {
     @InjectUriParam
     String preActivity;
 
-//    @Inject("array")
-//    ArrayList<Integer> array;
+    @Inject("array")
+    ArrayList<Integer> array;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -28,6 +31,6 @@ public class ThirdActivity extends BaseActivity {
         TextView textView2 = (TextView) findViewById(R.id.textView2);
 
         textView1.setText("preActivityName: " + preActivity);
-//        textView2.setText("user: " + array);
+        textView2.setText("user: " + array);
     }
 }

@@ -23,6 +23,6 @@ public interface RouterService {
     @FullUri("router://com.baronzhang.android.router.FourthActivity")
     void startFourthActivity(@UriParam("preActivity") String preActivity, @IntentExtrasParam("user") User user);
 
-    @FullUri("router://com.baronzhang.android.router.FourthActivity")
+    @FullUri("router://com.baronzhang.android.router.FifthActivity")
     void startFifthActivity(@UriParam("preActivity") String preActivity, @IntentExtrasParam("users") ArrayList<User> users);
 }

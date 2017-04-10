@@ -48,7 +48,7 @@ public class MainActivity extends BaseActivity {
         startFourthActivityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                User user = new User("小叶子", 17, 165, 80);
+                User user = new User("小叶子", 17, 165, 88);
                 routerService.startFourthActivity("MainActivity", user);
             }
         });
@@ -58,8 +58,8 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 ArrayList<User> users = new ArrayList<>();
-                users.add(new User("小叶子", 17, 165, 80));
-                users.add(new User("小叶子", 17, 165, 80));
+                users.add(new User("小叶子", 17, 165, 88));
+                users.add(new User("小叶子", 17, 165, 88));
                 routerService.startFifthActivity("MainActivity", users);
             }
         });

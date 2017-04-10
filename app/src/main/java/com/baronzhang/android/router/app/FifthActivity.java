@@ -5,15 +5,19 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.baronzhang.android.router.RouterInjector;
+import com.baronzhang.android.router.annotations.inject.Inject;
 import com.baronzhang.android.router.annotations.inject.InjectUriParam;
+import com.baronzhang.android.router.app.model.User;
+
+import java.util.ArrayList;
 
 public class FifthActivity extends BaseActivity {
 
     @InjectUriParam
     String preActivity;
 
-//    @Inject
-//    ArrayList<User> users;
+    @Inject
+    ArrayList<User> users;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -27,6 +31,6 @@ public class FifthActivity extends BaseActivity {
         TextView textView2 = (TextView) findViewById(R.id.textView2);
 
         textView1.setText("preActivityName: " + preActivity);
-//        textView2.setText("users: " + users);
+        textView2.setText("users: " + users);
     }
 }

@@ -63,7 +63,19 @@
         </activity>
         <activity
             android:name=".FifthActivity"
-            android:label="FifthActivity" />
+            android:label="FifthActivity">
+
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="com.baronzhang.android.router.FifthActivity"
+                    android:scheme="router" />
+            </intent-filter>
+        </activity>
 
     </application>
 
