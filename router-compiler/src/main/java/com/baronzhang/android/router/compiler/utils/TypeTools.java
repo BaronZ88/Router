@@ -16,7 +16,6 @@ public final class TypeTools {
 
     private TypeMirror parcelableType;
     private TypeMirror serializableType;
-    private TypeMirror parcelableArrayListType;
 
     private Types typeUtils;
 
@@ -26,7 +25,6 @@ public final class TypeTools {
 
         this.parcelableType = elementUtils.getTypeElement(PARCELABLE).asType();
         this.serializableType = elementUtils.getTypeElement(Constants.SERIALIZABLE).asType();
-        this.parcelableArrayListType = elementUtils.getTypeElement(Constants.ARRAY_LIST).asType();
     }
 
     public int convertType(TypeMirror typeMirror) {
@@ -103,10 +101,7 @@ public final class TypeTools {
             default:
                 if (typeUtils.isSubtype(typeMirror, parcelableType)) {
                     return Constants.TYPE_KIND.TYPE_PARCELABLE;
-                }
-                else if (typeUtils.isSubtype(typeMirror, parcelableArrayListType)) {
-                    return Constants.TYPE_KIND.TYPE_SERIALIZABLE;
-                } else if (typeUtils.isSubtype(typeMirror, serializableType)) {
+                }else if (typeUtils.isSubtype(typeMirror, serializableType)) {
                     if(typeUtils.asElement(typeMirror).toString().equals(Constants.ARRAY_LIST)){
                         return Constants.TYPE_KIND.TYPE_ARRAY_LIST_PARCELABLE;
                     }

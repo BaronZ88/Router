@@ -4,7 +4,7 @@
 
 ## 结构图
 
-<div align="center">
+<div align="left">
 	<img src="/picture/Router.png" width = "50%" height="50%" alt="Router" align=center />
 </div>
 
