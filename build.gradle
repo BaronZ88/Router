@@ -33,7 +33,7 @@ ext {
     userOrg = 'baronz88'
     groupId = 'com.baronzhang.android'
 //    uploadName = 'Router'
-    publishVersion = '0.2.0'
+    publishVersion = '0.2.3'
     desc = 'A android router library.'
     website = 'https://github.com/BaronZ88/Router'
     licences = ['Apache-2.0']
