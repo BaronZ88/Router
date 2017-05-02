@@ -1,7 +1,7 @@
 package com.baronzhang.android.router.compiler.processor;
 
-import com.baronzhang.android.router.annotations.inject.Inject;
-import com.baronzhang.android.router.annotations.inject.InjectUriParam;
+import com.baronzhang.android.router.annotation.inject.Inject;
+import com.baronzhang.android.router.annotation.inject.InjectUriParam;
 import com.baronzhang.android.router.compiler.utils.TypeTools;
 import com.google.auto.common.SuperficialValidation;
 import com.google.auto.service.AutoService;
@@ -35,7 +35,7 @@ import javax.tools.Diagnostic;
 import static javax.lang.model.element.ElementKind.CLASS;
 
 /**
- * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com ==>> baronzhang.com)
+ * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com)
  *         2017/3/14
  */
 @AutoService(Processor.class)

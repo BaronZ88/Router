@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
 
-group='com.github.BaronZ88'
+apply plugin: 'bintray-release'
 
 android {
     compileSdkVersion 25
@@ -29,7 +28,20 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
-    compile project(':router-annotations')
+    compile 'com.baronzhang.android:router-annotation:0.2.0'
 }
+
+//添加
+publish {
+    artifactId = 'router-api'
+    userOrg = rootProject.userOrg
+    groupId = rootProject.groupId
+//    uploadName = rootProject.uploadName
+    uploadName = artifactId
+    publishVersion = rootProject.publishVersion
+    desc = rootProject.description
+    website = rootProject.website
+    licences = rootProject.licences
+}
+

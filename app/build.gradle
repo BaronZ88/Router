@@ -31,10 +31,12 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    compile project(':router-api')
-    compile project(':router-annotations')
-    annotationProcessor project(':router-compiler')
-    compile 'com.android.support:appcompat-v7:25.1.1'
+//    compile project(':router-api')
+//    annotationProcessor project(':router-compiler')
+    compile 'com.baronzhang.android:router-api:0.2.0'
+    annotationProcessor 'com.baronzhang.android:router-compiler:0.2.0'
+
+    compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
     testCompile 'junit:junit:4.12'
 }

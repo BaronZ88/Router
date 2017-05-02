@@ -1,15 +1,15 @@
 package com.baronzhang.android.router.app.service;
 
-import com.baronzhang.android.router.annotations.router.CombinationUri;
-import com.baronzhang.android.router.annotations.router.FullUri;
-import com.baronzhang.android.router.annotations.router.IntentExtrasParam;
-import com.baronzhang.android.router.annotations.router.UriParam;
+import com.baronzhang.android.router.annotation.router.CombinationUri;
+import com.baronzhang.android.router.annotation.router.FullUri;
+import com.baronzhang.android.router.annotation.router.IntentExtrasParam;
+import com.baronzhang.android.router.annotation.router.UriParam;
 import com.baronzhang.android.router.app.model.User;
 
 import java.util.ArrayList;
 
 /**
- * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com ==>> baronzhang.com)
+ * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com)
  *         2017/3/29
  */
 public interface RouterService {

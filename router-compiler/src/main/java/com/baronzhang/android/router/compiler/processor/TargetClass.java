@@ -31,8 +31,8 @@
 
 package com.baronzhang.android.router.compiler.processor;
 
-import com.baronzhang.android.router.annotations.inject.Inject;
-import com.baronzhang.android.router.annotations.inject.InjectUriParam;
+import com.baronzhang.android.router.annotation.inject.Inject;
+import com.baronzhang.android.router.annotation.inject.InjectUriParam;
 import com.baronzhang.android.router.compiler.Constants;
 import com.baronzhang.android.router.compiler.utils.TypeTools;
 import com.squareup.javapoet.ClassName;
@@ -49,7 +49,7 @@ import java.util.List;
 import javax.lang.model.element.Modifier;
 
 /**
- * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com ==>> baronzhang.com)
+ * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com)
  *         2017/3/14
  */
 final class TargetClass {

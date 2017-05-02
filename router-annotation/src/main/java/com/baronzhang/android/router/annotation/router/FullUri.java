@@ -1,4 +1,4 @@
-package com.baronzhang.android.router.annotations.router;
+package com.baronzhang.android.router.annotation.router;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
  * <p>
  * 例如：@FullUri("openAnjukeApp://com.anjuke.android.app:666/secondhouse/detail")
  *
- * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com ==>> baronzhang.com)
+ * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com)
  *         2017/3/3
  */
 @Documented

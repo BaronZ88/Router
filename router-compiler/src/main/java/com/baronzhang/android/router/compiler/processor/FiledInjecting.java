@@ -5,7 +5,7 @@ import java.lang.annotation.Annotation;
 import javax.lang.model.type.TypeMirror;
 
 /**
- * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com ==>> baronzhang.com)
+ * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com)
  *         2017/3/14
  */
 final class FiledInjecting {

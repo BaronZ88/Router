@@ -9,10 +9,10 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.text.TextUtils;
 
-import com.baronzhang.android.router.annotations.router.CombinationUri;
-import com.baronzhang.android.router.annotations.router.FullUri;
-import com.baronzhang.android.router.annotations.router.IntentExtrasParam;
-import com.baronzhang.android.router.annotations.router.UriParam;
+import com.baronzhang.android.router.annotation.router.CombinationUri;
+import com.baronzhang.android.router.annotation.router.FullUri;
+import com.baronzhang.android.router.annotation.router.IntentExtrasParam;
+import com.baronzhang.android.router.annotation.router.UriParam;
 
 import java.io.Serializable;
 import java.lang.annotation.Annotation;
@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com ==>> baronzhang.com)
+ * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com)
  *         2017/3/3
  */
 public final class Router {

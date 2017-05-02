@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.baronzhang.android.router.RouterInjector;
-import com.baronzhang.android.router.annotations.inject.Inject;
-import com.baronzhang.android.router.annotations.inject.InjectUriParam;
+import com.baronzhang.android.router.annotation.inject.Inject;
+import com.baronzhang.android.router.annotation.inject.InjectUriParam;
 
 public class SecondActivity extends BaseActivity {
 

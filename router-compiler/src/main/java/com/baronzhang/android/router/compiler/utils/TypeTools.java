@@ -9,7 +9,7 @@ import javax.lang.model.util.Types;
 import static com.baronzhang.android.router.compiler.Constants.PARCELABLE;
 
 /**
- * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com ==>> baronzhang.com)
+ * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com)
  *         2017/3/17
  */
 public final class TypeTools {
