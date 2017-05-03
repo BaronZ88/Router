@@ -32,9 +32,8 @@ dependencies {
     compile 'com.baronzhang.android:router-annotation:0.2.3'
 }
 
-//添加
 publish {
-    artifactId = 'router-api'
+    artifactId = 'router'
     userOrg = rootProject.userOrg
     groupId = rootProject.groupId
 //    uploadName = rootProject.uploadName

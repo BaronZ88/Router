@@ -12,7 +12,6 @@ dependencies {
 sourceCompatibility = "1.7"
 targetCompatibility = "1.7"
 
-//添加
 publish {
     artifactId = 'router-compiler'
     userOrg = rootProject.userOrg
