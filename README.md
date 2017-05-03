@@ -1,18 +1,25 @@
-# Router
+## Router
 
 > Android 平台路由框架
 
-## 结构图
+[![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
+### 最新版本
+
+| 模块 | router | router-compiler |
+|-----|:--------:|:-------:|
+|最新版本|[ ![Download](https://api.bintray.com/packages/baronz88/maven/router/images/download.svg) ](https://bintray.com/baronz88/maven/router/_latestVersion)|[ ![Download](https://api.bintray.com/packages/baronz88/maven/router-compiler/images/download.svg) ](https://bintray.com/baronz88/maven/router-compiler/_latestVersion)|
+
+
+### 结构图
 
 <div align="left">
 	<img src="/picture/Router.png" width = "40%" height="40%" alt="Router" align=center />
 </div>
 
-## 何如使用
+### 使用
 
-### 一、添加依赖  
-
-**Gradle 方式依赖:**
+**一、添加依赖配置**  
 
 ```groovy
 dependencies {
@@ -21,31 +28,9 @@ dependencies {
 }
 ```
 
-**Maven 方式依赖:**
+**二、使用**
 
-```xml
-<dependency>
-  <groupId>com.baronzhang.android</groupId>
-  <artifactId>router</artifactId>
-  <version>0.2.3</version>
-  <type>pom</type>
-</dependency>
-```
-
-```xml
-<dependency>
-  <groupId>com.baronzhang.android</groupId>
-  <artifactId>router-compiler</artifactId>
-  <version>0.2.3</version>
-  <type>pom</type>
-</dependency>
-```
-
-
-
-### 二、使用
-
-## License
+### 开源许可
 
 ```
 Copyright 2017 Baron Zhang
