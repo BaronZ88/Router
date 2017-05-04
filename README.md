@@ -2,8 +2,6 @@
 
 > Android 平台路由框架
 
-[![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-
 ### 最新版本
 
 | 模块 | router | router-compiler |
@@ -30,7 +28,7 @@ dependencies {
 
 **二、使用**
 
-### 开源许可
+### 开源许可 [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 ```
 Copyright 2017 Baron Zhang
