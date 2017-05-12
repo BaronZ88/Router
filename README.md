@@ -22,7 +22,7 @@
 ```groovy
 dependencies {
 	compile 'com.baronzhang.android:router:0.2.3'
-	compile 'com.baronzhang.android:router-compiler:0.2.3'
+	annotationProcessor 'com.baronzhang.android:router-compiler:0.2.3'
 }
 ```
 
